@@ -13,8 +13,10 @@ const http=require('http');
 
 const server=http.createServer((req,res)=>{
     res.setHeader('Content-Type','text/html')
-    res.write("Welcome to my Node Js project");
     const url=req.url;
+    if(url===""){
+        res.write("Welcome to my Node Js project");
+    }
     if(url==='/home'){
         res.write("Welcome home")
 
@@ -23,14 +25,10 @@ const server=http.createServer((req,res)=>{
 
     }else if(url==='/node'){
         res.write("Welcome to my Node Js project");
-
-
     }else{
         res.write("404 Not Found")
-
     }
     res.end();
-    
 })
 server.listen(3000,()=>{
     console.log("Sever Is Running Bro");

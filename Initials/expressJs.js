@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+// const express=require('express')
+// const server=express()
+// server.use((req,res,next)=>{
+//     console.log(1)
+//     next();
+// })
+// server.use((req,res,next)=>{
+//     console.log(1)
+//     res.send('Hello i am Created Brother')
+    
+// })
+
+
+// server.listen(4000,()=>{
+//     console.log("server Started.....");
+// })
+>>>>>>> eb004ed6a6b26f8072a56d5523849d0771fafada
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -19,3 +38,7 @@ app.use('/', (req, res, next) => {
 });
 
 app.listen(3000);
+<<<<<<< HEAD
+=======
+
+>>>>>>> eb004ed6a6b26f8072a56d5523849d0771fafada
